@@ -1,0 +1,13 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/aizarcabrera/turing/1module/week_4/battleship/lib/game.rb": [
+        1,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1535825292
+  }
+}
