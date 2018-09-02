@@ -40,7 +40,12 @@ class PlayerTest < Minitest::Test
   # def test_it_can_place_a_two_units_ship
   #   player = Player.new
   #
-  #   assert_equal , player.place_ship('A1','A2')
+  #   player.place_ship('A1','A2')
+
+  # assert_equal {'A1': 0, 'A2': 0}, player.board.ships.first.coordinates
+  # end
+
+  # def test_it_can_place_a_three_unit_ship
   # end
 
 

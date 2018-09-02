@@ -9,4 +9,18 @@ class ShipTest < Minitest::Test
 
     assert_instance_of Ship, ship
   end
+
+  def test_it_has_coordinates
+    ship = Ship.new
+    coordinates = Hash.new
+
+
+   coordinates = {'A1'=> 0, 'A2'=> 0}
+   assert_instance_of Hash, ship.coordinates
+   assert_equal coordinates, ship.coordinates
+  end
+
+  # def test_coordinate_can_be_hit
+  #
+  # end
 end
