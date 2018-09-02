@@ -1,11 +1,10 @@
 require 'pry'
 
 class Board
-  attr_reader :display
 
   def initialize
-
-    @display = [[],[],[],[]]
+      @x = ["A", "B", "C", "D"]
+			@y = [1, 2, 3, 4]
 
   end
 

@@ -16,7 +16,7 @@ class Game
       # If they enter q or quit then the game should exit
       p 'instructions for player'
      else
-     break
+      break
     end
   end
 
