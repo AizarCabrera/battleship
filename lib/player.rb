@@ -4,7 +4,7 @@ require 'pry'
 class Player
   attr_reader :board
 
-  def initialize
+  def initialize(type)
 
     @board = Board.new
 
