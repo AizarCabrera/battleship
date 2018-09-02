@@ -11,6 +11,18 @@ class PlayerTest < Minitest::Test
     assert_instance_of Player, player
   end
 
+  def test_type_is_computer_by_default
+    player = Player.new
+
+    assert_equal "computer", player.type
+  end
+
+  def test_player_type_can_be_human
+    player = Player.new("human")
+
+    assert_equal "human", player.type
+  end
+
   def test_player_has_an_empty_board
     player = Player.new
 
@@ -24,4 +36,12 @@ class PlayerTest < Minitest::Test
     assert_instance_of Board, player.board
     assert_equal empty_board, player.board.display
   end
+
+  # def test_it_can_place_a_two_units_ship
+  #   player = Player.new
+  #
+  #   assert_equal , player.place_ship('A1','A2')
+  # end
+
+
 end

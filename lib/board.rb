@@ -1,7 +1,8 @@
 require 'pry'
 
 class Board
-  attr_reader :display
+  attr_reader :display,
+              :ships
 
   def initialize
 
@@ -11,7 +12,8 @@ class Board
                 ['C'] + Array.new(4),
                 ['D'] + Array.new(4)
               ]
-              
+    @ships = []
+
   end
 
   def print_board
@@ -24,6 +26,8 @@ class Board
     end
     puts "=============="
   end
+
+
 
   def place_random
     # When the player decides to start a game,

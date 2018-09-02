@@ -21,7 +21,11 @@ class BoardTest < Minitest::Test
     assert_equal expected, board.display
   end
 
+def test_it_starts_with_zero_ships
+  board = Board.new
 
+  assert_equal [], board.ships
+end
 
 
 end

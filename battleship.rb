@@ -5,7 +5,6 @@ class BattleShip
   def initialize
     start
   end
-
   def start
     p "Welcome to BATTLESHIP"
     p  "Would you like to (p)lay, read the (i)nstructions, or (q)uit?"
