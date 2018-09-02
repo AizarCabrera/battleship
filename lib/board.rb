@@ -5,8 +5,24 @@ class Board
 
   def initialize
 
-    @display = [[],[],[],[]]
+    @display = [['. ', '1 ', '2 ', '3 ', '4 '],
+                ['A'] + Array.new(4),
+                ['B'] + Array.new(4),
+                ['C'] + Array.new(4),
+                ['D'] + Array.new(4)
+              ]
+              
+  end
 
+  def print_board
+    puts "=============="
+    @display.each do |row|
+      row.each do |spot|
+        print spot
+      end
+      puts
+    end
+    puts "=============="
   end
 
   def place_random
