@@ -1,7 +1,15 @@
+require './lib/board'
 require 'pry'
 
 class Player
+  attr_reader :board
 
+  def initialize
+
+    @board = Board.new
+
+
+  end
 
   def entering_coordinates
     # Then they enter coordinates like this:
