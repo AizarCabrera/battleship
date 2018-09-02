@@ -12,12 +12,18 @@ class Player
 
   end
 
-  def place_random
-    # When the player decides to start a game,
-    # the computer player should place their ships.
-    # The baseline computer should simply use random placements,
-    # but still obey these constraints:
+  def place_ship(ship_1, ship_2)
+
+    # the  player should place their ships.
   end
+
+
+    def place_random_ships
+      # When the player decides to start a game,
+      # the computer player should place their ships.
+      # The baseline computer should simply use random placements,
+      # but still obey these constraints:
+    end
 
   def validate_coordinates
     # Ships cannot wrap around the board

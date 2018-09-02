@@ -15,7 +15,7 @@ class ShipTest < Minitest::Test
     coordinates = Hash.new
 
 
-   coordinates = {'A1'=> 0, 'A2'=> 0}
+   coordinates = {'A1': 0, 'A2': 0}
    assert_instance_of Hash, ship.coordinates
    assert_equal coordinates, ship.coordinates
   end

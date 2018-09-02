@@ -1,4 +1,5 @@
 require './others/minitest_helper.rb'
+require './lib/ship'
 require './lib/board'
 require './lib/player'
 require 'pry'
@@ -37,13 +38,17 @@ class PlayerTest < Minitest::Test
     assert_equal empty_board, player.board.display
   end
 
-  # def test_it_can_place_a_two_units_ship
-  #   player = Player.new
-  #
-  #   player.place_ship('A1','A2')
+  def test_it_can_place_a_two_units_ship
+    player = Player.new
+    ship = Ship.new
+    player.board.ships << ship
 
-  # assert_equal {'A1': 0, 'A2': 0}, player.board.ships.first.coordinates
-  # end
+
+    player.place_ship('A1','A2')
+    coordinates = {'A1': 0, 'A2': 0}
+
+  assert_equal coordinates, player.board.ships.first.coordinates
+  end
 
   # def test_it_can_place_a_three_unit_ship
   # end

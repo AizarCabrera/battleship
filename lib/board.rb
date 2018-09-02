@@ -27,32 +27,6 @@ class Board
     puts "=============="
   end
 
-
-
-  def place_random
-    # When the player decides to start a game,
-    # the computer player should place their ships.
-    # The baseline computer should simply use random placements,
-    # but still obey these constraints:
-  end
-
-  def validate_coordinates
-    # Ships cannot wrap around the board
-    # Ships cannot overlap
-    # Ships can be laid either horizontally or vertically
-    # Coordinates must correspond to the first and last units of the ship.
-    # (IE: You can’t place a two unit ship at “A1 A3”)
-
-    # Player ship positions should be validated according
-    # to the same rules listed above.
-    # If a user enters an invalid ship coordinate, the game should
-    # display a message explaining which of the rules their choice violated,
-    # then ask them to re-enter all coordinates for that specific ship.
-    # (Any previous ship placements should still be retained)
-    #
-    # Once all ships have been placed, the user can enter the main game flow phase
-  end
-
   def rendering
 
     # During this phase the game will frequently need to display the current game view.
