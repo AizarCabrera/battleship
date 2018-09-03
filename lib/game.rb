@@ -13,7 +13,23 @@ class Game
   #
   #   p 'Enter the squares for the two-unit ship:'
   # end
-  #
+
+  #  # def prompting_player_for_a_shot
+    #   # At the bottom of the grid display, the board should include a message
+    #   #  prompting the player to enter a coordinate to fire on.
+    #   #  This should follow the same pattern as when placing ships – a
+    #   #  letter/number combination to indicate the row and column to hit.
+    # end
+
+    # def display_shot_information
+    #   # After the player has entered their target, display a short message
+    #   # indicating whether it was a hit or a miss.
+    #   # Additionally, re-render the board showing the new shot.
+    #   #
+    #   # Finally, prompt the player to end their turn by pressing ENTER.
+    # end
+
+    
   # def ship_hit_sequence
   #   if # If the hit did not sink the ship, tell them :
   #   'You hit an enemy ship...!'

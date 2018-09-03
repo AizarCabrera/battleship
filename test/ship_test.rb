@@ -23,4 +23,5 @@ class ShipTest < Minitest::Test
   # def test_coordinate_can_be_hit
   #
   # end
+  
 end

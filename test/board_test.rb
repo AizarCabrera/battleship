@@ -1,5 +1,6 @@
 require './others/minitest_helper.rb'
 require './lib/board'
+require './lib/ship'
 require 'pry'
 
 class BoardTest < Minitest::Test
@@ -27,8 +28,13 @@ class BoardTest < Minitest::Test
     assert_equal [], board.ships
   end
 
-  def test_it_can_add_a_ship
 
-    # assert_instance_of Ship, board.ships.first
-  end
+  #
+  # def test_it_can_add_a_ship
+  #   board = Board.new
+  #   ship = Ship.new
+  #
+  #   board.add_ship(ship)
+  #   assert_instance_of Ship, board.ships.first
+  # end
 end
