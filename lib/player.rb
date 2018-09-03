@@ -30,28 +30,26 @@ class Player
   end
 
   def get_random_horizontal_coordinates_3_unit_ship
-    letter = ('A'..'D').to_a.sample #get a random letter A-D
-    number = rand(1..3)             #get a random number 1-3
+    letter = ('A'..'D').to_a.sample
+    number = rand(1..3)
     ["#{letter}#{number}", "#{letter}#{number + 1}", "#{letter}#{number + 2}"]
   end
-  #
-  # def get_random_vertical_coordinates
-  #   letter = ('A'..'C').to_a.sample #get a random letter A-C
-  #   number = rand(1..4)             #get a random number 1-4
-  #   ["#{letter}#{number}", "#{letter.next}#{number}"]
-  # end
+
+  def get_random_vertical_coordinates_3_unit_ship
+    letter = ('A'..'C').to_a.sample
+    number = rand(1..4)
+    ["#{letter}#{number}", "#{letter.next}#{number}","#{letter.next.next}#{number}"]
+
+  end
+
+
   # def place_random_ships
   #   random_coordinates =
   #   place_ship(random_coordinates)
   # end
   #
   # def validate_coordinates
-  #   # Ships cannot wrap around the board
   #   # Ships cannot overlap
-  #   # Ships can be laid either horizontally or vertically
-  #   # Coordinates must correspond to the first and last units of the ship.
-  #   # (IE: You can’t place a two unit ship at “A1 A3”)
-  #
   #   # Player ship positions should be validated according
   #   # to the same rules listed above.
   #   # If a user enters an invalid ship coordinate, the game should

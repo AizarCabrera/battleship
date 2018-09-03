@@ -84,10 +84,14 @@ class PlayerTest < Minitest::Test
     random = player.get_random_horizontal_coordinates_3_unit_ship
     refute_equal random, player.get_random_horizontal_coordinates_3_unit_ship
   end
-  #
-  # def test_it_get_random_vertical_coordinates_for_3_unit_ship
-  # end
-  #
+
+  def test_it_get_random_vertical_coordinates_for_3_unit_ship
+    player = Player.new
+
+    random = player.get_random_vertical_coordinates_3_unit_ship
+    refute_equal random, player.get_random_vertical_coordinates_3_unit_ship
+  end
+
   # def test_computer_can_place_one_random_ship
   #   player = Player.new
   #
