@@ -62,19 +62,21 @@ class PlayerTest < Minitest::Test
 
     assert_equal coordinates, player.board.ships.first.coordinates
   end
-  #
-  # def test_it_get_random_horizontal_coordinates_for_2_unit_ship
-  #   player = Player.new
-  #
-  #   assert_instance_of Array, player.get_random_horizontal_coordinates
-  #
-  #   random = player.get_random_horizontal_coordinates
-  #   refute_equal random, player.get_random_horizontal_coordinates
-  # end
-  #
-  #
-  # def test_it_get_random_vertical_coordinates_for_2_unit_ship
-  # end
+
+  def test_it_get_random_horizontal_coordinates_for_2_unit_ship
+    player = Player.new
+
+    random = player.get_random_horizontal_coordinates
+    refute_equal random, player.get_random_horizontal_coordinates
+  end
+
+
+  def test_it_get_random_vertical_coordinates_for_2_unit_ship
+    player = Player.new
+
+    random = player.get_random_vertical_coordinates
+    refute_equal random, player.get_random_vertical_coordinates
+  end
   #
   # def test_it_get_random_horizontal_coordinates_for_3_unit_ship
   # end

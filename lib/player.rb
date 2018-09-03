@@ -17,24 +17,17 @@ class Player
     @board.add_ship(ship)
   end
 
+  def get_random_horizontal_coordinates
+    letter = ('A'..'D').to_a.sample #get a random letter A-D
+    number = rand(1..3)             #get a random number 1-3
+    ["#{letter}#{number}", "#{letter}#{number + 1}"]
+  end
 
-  # 
-  # def get_random_horizontal_coordinates
-  #   letter = ('A'..'D').to_a.sample #get a random letter A-D
-  #   number = rand(1..3)#get a random number 1-3
-  #   ["#{letter}#{number}", "#{letter}#{number + 1}"]
-  # end
-
-
-
-
-
-
-  # def get_random_vertical_coordinates
-  #   letter = #get a random letter A-C
-  #   number = #get a random number 1-4
-  #   ["#{letter}#{number}", "#{letter + 1}#{number}"]
-  # end
+  def get_random_vertical_coordinates
+    letter = ('A'..'C').to_a.sample #get a random letter A-C
+    number = rand(1..4)             #get a random number 1-4
+    ["#{letter}#{number}", "#{letter.next}#{number}"]
+  end
   #
   # def place_random_ships
   #   random_coordinates =
