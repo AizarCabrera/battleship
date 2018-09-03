@@ -19,34 +19,32 @@ class Player
 
   def get_random_horizontal_coordinates
     letter = ('A'..'D').to_a.sample #get a random letter A-D
-    number = rand(1..3)             #get a random number 1-3
-    ["#{letter}#{number}", "#{letter}#{number + 1}"]
+    num = rand(1..3)             #get a random number 1-3
+    ["#{letter}#{num}", "#{letter}#{num + 1}"]
   end
 
   def get_random_vertical_coordinates
     letter = ('A'..'C').to_a.sample #get a random letter A-C
-    number = rand(1..4)             #get a random number 1-4
-    ["#{letter}#{number}", "#{letter.next}#{number}"]
+    num = rand(1..4)             #get a random number 1-4
+    ["#{letter}#{num}", "#{letter.next}#{num}"]
   end
 
   def get_random_horizontal_coordinates_3_unit_ship
     letter = ('A'..'D').to_a.sample
-    number = rand(1..3)
-    ["#{letter}#{number}", "#{letter}#{number + 1}", "#{letter}#{number + 2}"]
+    num = rand(1..3)
+    ["#{letter}#{num}", "#{letter}#{num + 1}", "#{letter}#{num + 2}"]
   end
 
   def get_random_vertical_coordinates_3_unit_ship
     letter = ('A'..'C').to_a.sample
-    number = rand(1..4)
-    ["#{letter}#{number}", "#{letter.next}#{number}","#{letter.next.next}#{number}"]
-
+    num = rand(1..4)
+    ["#{letter}#{num}","#{letter.next}#{num}","#{letter.next.next}#{num}"]
   end
 
-
-  # def place_random_ships
-  #   random_coordinates =
-  #   place_ship(random_coordinates)
-  # end
+  def place_random_ships
+    random_coordinates =
+    place_ship(random_coordinates)
+  end
   #
   # def validate_coordinates
   #   # Ships cannot overlap
