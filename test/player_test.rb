@@ -50,18 +50,18 @@ class PlayerTest < Minitest::Test
     assert_equal coordinates, player.board.ships.first.coordinates
   end
 
-  # def test_it_can_place_a_three_unit_ship
-  #   player = Player.new
-  #   coord_1 = 'A1'
-  #   coord_2 = 'A2'
-  #   coord_3 = 'A3'
-  #
-  #   player.place_ship(coord_1, coord_2, coord_3)
-  #
-  #   coordinates = ['A1', 'A2','A3']
-  #
-  #   assert_equal coordinates, player.board.ships.first.coordinates
-  # end
+  def test_it_can_place_a_three_unit_ship
+    player = Player.new
+    coord_1 = 'A1'
+    coord_2 = 'A2'
+    coord_3 = 'A3'
+
+    player.place_ship(coord_1, coord_2, coord_3)
+
+    coordinates = ['A1', 'A2','A3']
+
+    assert_equal coordinates, player.board.ships.first.coordinates
+  end
   #
   # def test_it_get_random_horizontal_coordinates_for_2_unit_ship
   #   player = Player.new
@@ -69,7 +69,6 @@ class PlayerTest < Minitest::Test
   #   assert_instance_of Array, player.get_random_horizontal_coordinates
   #
   #   random = player.get_random_horizontal_coordinates
-  #
   #   refute_equal random, player.get_random_horizontal_coordinates
   # end
   #
