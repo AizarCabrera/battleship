@@ -95,15 +95,8 @@ class PlayerTest < Minitest::Test
   def test_computer_can_place_one_random_ship
     player = Player.new
 
-    player.place_random_ships
 
-    # expect there to be a ship
+    player.place_random_ships
     assert_instance_of Ship, player.board.ships.first
   end
-  
-  # def test_computer_places_random_ships
-  #   # watch out for overlapping
-  #   # places 2 unit ship and 3 unit ship randomly
-  # end
-
 end

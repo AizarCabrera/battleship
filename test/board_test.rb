@@ -29,12 +29,4 @@ class BoardTest < Minitest::Test
   end
 
 
-  #
-  # def test_it_can_add_a_ship
-  #   board = Board.new
-  #   ship = Ship.new
-  #
-  #   board.add_ship(ship)
-  #   assert_instance_of Ship, board.ships.first
-  # end
 end

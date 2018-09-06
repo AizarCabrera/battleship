@@ -8,8 +8,4 @@ class GameTest < Minitest::Test
 
     assert_instance_of Game, game
   end
-
-
-
-
 end
